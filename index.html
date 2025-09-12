@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roma Planner</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="roma-planner.png">
+  <!-- استيراد خط "Cairo" من Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-overlay"></div>
+    <div class="header-content">
+      <div class="logo">🗓️ My plans</div>
+      <div class="tagline">😉🖊️</div>
+    </div>
+  </header>
+  <main id="main-content">
+    <!-- قسم الجدول اليومي للمواد -->
+    <section id="daily-timetable-section" class="section">
+      <h2 class="section-title">جدول المواد اليومي</h2>
+      <div id="daily-timetable" class="grid-container"></div>
+    </section>
+    <!-- قسم الجدول الأسبوعي للمحاضرات والمهام -->
+    <section id="weekly-schedule-section" class="section">
+      <h2 class="section-title">جدول الأسابيع (35 أسبوع) يارب هون🤦‍♀️</h2>
+      <div id="weeks-container"></div>
+    </section>
+  </main>
+
+  <section id="library">
+  <h1>📚 مكتبتي</h1>
+
+  <div class="book-form">
+    <input type="text" id="bookName" placeholder="book name">
+    <input type="text" id="bookImage" placeholder="Link to the book's image 🔗">
+    <input type="file" id="bookFile" accept="image/*">
+<label for="bookFile" class="file-label">📂 Choose Image</label>
+
+    <button onclick="addBook()">➕ Add a book</button>
+  </div>
+  <div class="book-list" id="bookList"></div>
+</section>
+
+<button class="love-btn" onclick="showLove()">دوسي هنا ي حبيبة بابا</button>
+
+
+  <footer>
+    <p class="footer-bottom__copyright">
+      Created by <a href="https://pro-mw.github.io/Mohamed-Walid/" target="_blank">MW</a>
+    </p>
+    <p class="footer-bottom__copyright">
+      © 2025 MW . جميع الحقوق محفوظة.
+    </p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
